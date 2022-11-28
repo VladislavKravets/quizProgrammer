@@ -1,8 +1,8 @@
 package com.example.mobiledevlab3;
 
 public class Answer {
-    String AnswerText;
-    boolean correctly;
+    private final String AnswerText;
+    private final boolean correctly;
 
     public Answer(String answerText, boolean correctly) {
         AnswerText = answerText;

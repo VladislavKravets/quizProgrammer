@@ -1,22 +1,24 @@
 package com.example.mobiledevlab3;
 
-public class Questions {
-    String questionsText;
-    Answer[] answers;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Questions(String questionsText, Answer[] text) {
+public class Questions {
+    private final String questionsText;
+    private final List<Answer> answers;
+
+    public Questions(String questionsText, ArrayList<Answer> answers) {
         this.questionsText = questionsText;
-        this.answers = text;
+        this.answers = answers;
     }
+
 
     public String getQuestionsText() {
         return questionsText;
     }
 
-    public Answer[] getAnswers() {
+    public List<Answer> getAnswers() {
         return answers;
     }
-    public Answer getAnswers(int index) {
-        return answers[index];
-    }
+
 }
